@@ -4,10 +4,10 @@ const app = require("express")();
 const port = process.env.PORT ?? 3000;
 const axios = require("express")();
 // import { Octokit } from 'octokit';
-const octokit = require('octokit').Octokit;
+const github = require('octokit');
 
 
-const octokit = new octokit({
+const octokit = new github.Octokit({
     auth: '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'
 })
 
