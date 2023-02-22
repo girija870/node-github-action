@@ -9,7 +9,7 @@ const github = require('octokit');
 
 const octokit = new github.Octokit({
     auth: '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'
-})
+});
 
 
 
