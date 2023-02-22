@@ -3,10 +3,11 @@ const hook = new Webhook("https://discord.com/api/webhooks/1077878564088721409/Z
 const app = require("express")();
 const port = process.env.PORT ?? 3000;
 const axios = require("express")();
-import { Octokit } from 'octokit';
+// import { Octokit } from 'octokit';
+const octokit = require('octokit').Octokit;
 
 
-const octokit = new Octokit({
+const octokit = new octokit({
     auth: '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'
 })
 
