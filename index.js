@@ -13,10 +13,8 @@ const octokit = new github.Octokit({
 
 
 
-app.post('/', async (req, res) => {
+app.get('/', async (req, res) => {
 
-
-    octokit.auth()
     /// get artifict url
     const response = await octokit.request('GET /repos/girija870/ci-cd-github_action/actions/artifacts');
 
